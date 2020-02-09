@@ -1,0 +1,15 @@
+$dark-overlay: rgba(0,0,0,0.7);
+#home-section{
+  background-image: url("../img/nirjhor.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+  min-height: 700px;
+  .dark-overlay{
+    background-color: dark-overlay;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height: 700px;
+  }
+}
