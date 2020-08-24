@@ -95,15 +95,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'bdexpress.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 
 # Password validation
@@ -163,4 +154,9 @@ EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER ="itmasjoy@gmail.com"
 
-EMAIL_HOST_PASSWORD ="" # add your email password
+EMAIL_HOST_PASSWORD ="26071119975593" # add your email password
+
+try:
+    from blog.local_settings import *
+except ImportError:
+    pass
